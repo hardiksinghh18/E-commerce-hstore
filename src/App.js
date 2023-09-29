@@ -32,9 +32,10 @@ function App() {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
       document.getElementById("navbar").style.top = "0";
-      document.getElementById("navbar").style.transition = "all ease 1s";
+      document.getElementById("navbar").style.transition = "all ease .5s";
     } else {
-      document.getElementById("navbar").style.top = "-80px";
+      document.getElementById("navbar").style.top 
+      = "-110px";
     }
     prevScrollpos = currentScrollPos;
   }

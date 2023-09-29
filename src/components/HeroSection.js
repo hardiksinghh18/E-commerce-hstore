@@ -9,7 +9,7 @@ const HeroSection = () => {
                 <div class="banner-content">
                     <h1>Welcome to  .hstore</h1>
                     <p>Discover the latest and greatest in electronics!</p>
-                    <NavLink to={"/products"} class="ShopButton">Shop Now</NavLink>
+                    <NavLink to={"/products"} ><button class="ShopButton">Shop Now</button></NavLink>
                 </div>
             </section >
 

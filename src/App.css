@@ -34,7 +34,17 @@ body {
   height: 50vh;
   width: 100vw;
 }
-
+body::-webkit-scrollbar {
+  width: 5px;               
+}
+body::-webkit-scrollbar-track {
+  background: white;        
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(215, 215, 215);    
+  border-radius: 20px;
+  
+}
 /* icon style  */
 
 
@@ -167,7 +177,7 @@ h7 {
 
 .active {
   color: rgb(255, 0, 106);
-  box-shadow: 0px 1px 0px 0px rgb(49, 48, 48);
+  /* box-shadow: 0px 1px 0px 0px rgb(49, 48, 48); */
  
 }
 
@@ -570,7 +580,7 @@ justify-content: flex-end;
   width: 10vw;
   height: fit-content;
   border: 1px solid rgb(170, 168, 168);
-  border-radius: 20px;
+  border-radius: .5rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -654,10 +664,10 @@ justify-content: flex-end;
 
 .sort {
   justify-content: space-between;
-  margin: 5px 2px 25px 2px;
+  margin: 0px 10px 20px 2px;
   padding: 15px 30px;
   border: 1px solid rgb(151, 151, 151);
-  border-radius: 15px;
+  border-radius: .5rem;
 }
 
 .sortIcons {
@@ -813,7 +823,7 @@ justify-content: flex-end;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+margin-top: 5rem;
   border-radius: 5px;
   /* height: 20vw; */
 
@@ -1055,8 +1065,7 @@ justify-content: flex-end;
 
 /* Basic styles for the banner section */
 .banner {
-  background-image:linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)), url('https://img.freepik.com/premium-photo/top-view-online-shopping-concept-with-credit-card-smart-phone-computer-isolated-office-yellow-table-background_315337-3594.jpg'); /* Replace with your banner image URL */
-  background-size: cover;
+  background-image:linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)), url('https://cdn.fs.teachablecdn.com/8uK6gIZQyug8p3EuZXdP');
   background-position: center;
   height: 400px;
   text-align: center;
@@ -1230,7 +1239,18 @@ h3 {
   align-items: center;
   gap: 30px;
 }
+.listDetails h2{
+  margin: 0;
+  font-size: 1.5rem;
+  color: rgb(5, 101, 255);
+}
 
+.listDetails .ri-heart-fill{
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  color:rgb(5, 101, 255);
+}
 
 
 
@@ -1396,7 +1416,7 @@ h3 {
   }
 
   .listSection button {
-    font-size: 4px;
+    font-size: .4rem;
   }
 
   .listSection .heading {
@@ -1449,7 +1469,7 @@ h3 {
 
 }
 .cartsection .cartItem{
-  gap: 20px;
+  gap: 2px;
 }
 .cartsection figure{
   margin: 5px;
@@ -1457,12 +1477,37 @@ h3 {
 .pricebox{
   justify-content: center;
 }
+.listDetails{
+  margin: 0 .5rem;
+  padding: 0;
+}
+.listDetails .heading{
+  margin: 0;
+  padding: 0;
+}
+.listDetails .ri-heart-fill{
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  color:rgb(5, 101, 255);
+}
+.listDetails h2{
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  color: rgb(5, 101, 255);
+}
+
+
 
 }
 
 @media screen and (max-width:640px) {
-  .search-box {
-    display: none;
+  .search-box input{
+    width: 3rem;
+    height: 1rem;
+    font-size: 1rem;
+    margin-right: 1rem;
   }
 
   .totalProducts {
@@ -1485,6 +1530,20 @@ h3 {
   .productContainer {
     display: flex;
     flex-direction: column;
+  }
+  .trustedSection img {
+    width: 50px;
+  }
+  .trustedSection h2{
+    font-size: 1rem;
+  }
+
+  .incdec h4{
+    font-size: .75rem;
+    margin: 0;
+  }
+  .footer a,h4,p{
+    font-size: .75rem;
   }
 
 }
